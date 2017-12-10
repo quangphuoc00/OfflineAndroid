@@ -18,6 +18,7 @@ public abstract class CommentDatabase extends RoomDatabase{
         if (instance == null) {
             instance = Room
                     .databaseBuilder(context.getApplicationContext(), CommentDatabase.class, Constants.DB_NAME)
+                    .allowMainThreadQueries()
                     .build();
         }
         return instance;

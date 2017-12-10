@@ -48,7 +48,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="@{viewmodel`::addComment}"
+                    android:onClick="@{viewmodel::addComment}"
                     android:text="@string/comments_add_comment_button_text" />
 
             </LinearLayout>
